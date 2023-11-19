@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="icon" type="image/png" href="./img/logo.png">
+    <link rel="stylesheet" href="./css/style.css" />
+    <script src="./login.js"></script>
+  </head>
+  <body>
+    <section class="container">
+      <header>Login to your Account </header>
+  
+      <form action="check_user.php" method="post" class="form">
+        <div class="input-FNP">
+          <label>Full Name</label>
+          <input type="text" name="full_name" placeholder="Enter full name" required />
+        </div>
+        
+        
+          <div class="input-FNP">
+            
+            <div class="column">
+              <div class="input-box">
+                
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+
+          <div class="LOG IN">
+            <div class="btncenter">
+              <button type="submit">LOGIN</button>
+            </div>
+</div>
+            <div class="Click">
+              <div class="btnclick">
+            <p> Dont have an account yet?</p>
+           
+            <script src="login.js"></script>
+            <button class="return-button" onclick="goRegisterPage()">Click here to create an account</button>
+            </div>
+         </div>
+      </form>
+    </section>
+    
+  </body>
+</html>

@@ -1,0 +1,230 @@
+/* Import Google font - Poppins */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+
+p{
+color: #1b0707;
+text-align: center;
+
+}
+
+
+body {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  background-image: url("../img/bg-dhvsu.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+ 
+  
+}
+.container {
+  position: relative;
+  max-width: 700px;
+  width: 100%;
+  background: #421f1f48;
+  padding: 25px;
+  border-radius: 8px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+.container header {
+  font-size: 1.5rem;
+  color: #333;
+  font-weight: 500;
+  text-align: center;
+}
+.container .form {
+  margin-top: 30px;
+}
+.form .input-box {
+  width: 100%;
+  margin-top: 20px;
+}
+.input-box label {
+  color: #ece2e2;
+}
+.form :where(.input-box input, .select-box) {
+  position: relative;
+  height: 50px;
+  width: 100%;
+  outline: none;
+  font-size: 1rem;
+  color: #707070;
+  margin-top: 8px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  padding: 0 15px;
+}
+.input-box input:focus {
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
+}
+--------
+
+.form .input-FNP {
+  width: 100%;
+  margin-top: 20px;
+}
+.input-FNP label {
+  color: #ece2e2;
+
+}
+
+.form :where(.input-FNP input, .select-box) {
+  position: relative;
+  height: 55px;
+  width: 100%;
+  outline: none;
+  font-size: 1rem;
+  color: #707070;
+  margin-top: 8px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  padding: 0 15px;
+}
+.input-FNP input:focus {
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
+}
+
+
+
+
+.form .column {
+  display: flex;
+  column-gap: 15px;
+}
+.form .classification-box {
+  margin-top: 20px;
+}
+.classification-box h3 {
+  color: #f0eaea;
+  font-size: 1rem;
+  font-weight: 400;
+  margin-bottom: 8px;
+}
+.form :where(.classification-option, .classification) {
+  display: flex;
+  align-items: center;
+  column-gap: 50px;
+  flex-wrap: wrap;
+}
+.form .classification {
+  column-gap: 5px;
+}
+.classification input {
+  accent-color: rgb(130, 106, 251);
+}
+.form :where(.classification input, .classification label) {
+  cursor: pointer;
+}
+.classification label {
+  color: #f0e9e9;
+}
+
+.select-box select {
+  height: 100%;
+  width: 100%;
+  outline: none;
+  border: none;
+  color: #707070;
+  font-size: 1rem;
+}
+.form button {
+  height: 55px;
+  width: 95%;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 400;
+  margin-top: 30px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  background: rgb(130, 106, 251);
+}
+.form button:hover {
+  background: rgb(88, 56, 250);
+}
+/*Responsive*/
+@media screen and (max-width: 500px) {
+  .form .column {
+    flex-wrap: wrap;
+  }
+  .form :where(.classification-option, .classification) {
+    row-gap: 15px;
+  }
+}
+
+.LOGIN {
+  height: 200px;
+  position: relative;
+  border: 3px solid green;
+}
+
+.btncenter {
+  height: 55px;
+  width: 100%;
+  margin: 20px;
+  position: absolute;
+  top: 90%;
+  left: 50%;
+  font-size: 1rem;
+  font-weight: 400;
+  transition: all 0.2s ease;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+
+.btnclick {
+  height: 55px;
+  width: 70%;
+  margin: 20px;
+  position: absolute;
+  top: 120%;
+  left: 50%;
+  font-size: 1rem;
+  font-weight: 400;
+  transition: all 0.2s ease;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.return-button {
+  background-color: #808080;
+}
+
+input[type="submit"],
+.return-button {
+  background-color: var(--primary);
+  color: #fff;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  width: 40%;
+  
+
+}
+
+input[type="submit"]:hover,
+.return-button:hover {
+  background-color: var(--primary);
+}
+
+.return-button {
+  background-color: #808080;
+}
+
+input.checkbox { 
+  width: 40px; 
+  height: 40px; }
